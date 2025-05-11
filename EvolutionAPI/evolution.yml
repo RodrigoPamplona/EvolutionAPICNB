@@ -18,4 +18,8 @@ services:
       - "traefik.http.routers.evolutionapi.tls.certresolver=myresolver"
       - "traefik.http.routers.evolutionapi.service=evolutionapi"
       - "traefik.http.services.evolutionapi.loadbalancer.server.port=8080"
-
+    networks:
+      - evolution_network
+networks:      # <-- Essa parte vai no FINAL
+    evolution_network:
+    external: true
