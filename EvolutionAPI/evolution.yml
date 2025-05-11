@@ -9,3 +9,5 @@ services:
       - ./evolution_instances:/evolution/instances
     env_file:
       - .env
+    environment:
+      DATABASE_URL: "postgresql://postgres:CafePreto!2025@10.101.1.111:5432/evolution_db?schema=public"

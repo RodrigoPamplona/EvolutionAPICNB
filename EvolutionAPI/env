@@ -15,8 +15,8 @@ LOG_BAILEYS=error
 DEL_INSTANCE=false
 
 DATABASE_PROVIDER=postgresql
-DATABASE_CONNECTION_URI=postgresql://postgres:typebot@postgres:5432/evolution_db?schema=public
-DATABASE_URL=postgresql://postgres:typebot@postgres:5432/evolution_db?schema=public
+DATABASE_CONNECTION_URI=postgresql://postgres:CafePreto!2025@10.101.1.111:5432/evolution_db?schema=public
+DATABASE_URL=postgresql://postgres:CafePreto!2025@10.101.1.111:5432/evolution_db?schema=public
 DATABASE_CONNECTION_CLIENT_NAME=evolution_exchange
 
 DATABASE_SAVE_DATA_INSTANCE=true
