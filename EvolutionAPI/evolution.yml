@@ -20,6 +20,7 @@ services:
       - "traefik.http.services.evolutionapi.loadbalancer.server.port=8080"
     networks:
       - evolution_network
-networks:      # <-- Essa parte vai no FINAL
+      
+networks:
     evolution_network:
     external: true
