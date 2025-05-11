@@ -11,3 +11,11 @@ services:
       - .env
     environment:
       DATABASE_URL: "postgresql://postgres:CafePreto!2025@10.101.1.111:5432/evolution_db?schema=public"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.evolutionapi.rule=Host(`testebrasil.duckdns.org`)"
+      - "traefik.http.routers.evolutionapi.entrypoints=websecure"
+      - "traefik.http.routers.evolutionapi.tls.certresolver=myresolver"
+      - "traefik.http.routers.evolutionapi.service=evolutionapi"
+      - "traefik.http.services.evolutionapi.loadbalancer.server.port=8080"
+
